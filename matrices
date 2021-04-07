@@ -1,0 +1,518 @@
+print("Hemos creado un programa que resuelve ejercicios de saidy")
+
+print("")
+
+print("En este caso hemos subido uno sobre el calculo de las matrices")
+
+print("")
+
+input("Presiona enter para comenzar")
+
+def matematicas():
+    continuar = True
+    while continuar:
+        lista1 = [1,]
+        lista2 = [1,]
+        lista3 = [1,]
+
+        lista1.clear()
+        lista2.clear()
+        lista3.clear()
+
+        resta = 1
+        suma = 2
+        multiplicacion = 3
+
+        print("Quieres trabajar con numeros decimales")
+        pregunta2 = input("si o no: ")
+
+        print("Selecciona el tipo calculo de matrices por su numero")
+
+        print(f"""      Metodos De Calculo De Matrices
+        {resta}) Resta
+        {suma}) Suma 
+        {multiplicacion}) Multiplicacion
+        """)
+
+        pregunta1 = int(input("Selecciona por su numero el tipo de calculo: "))
+
+        lol1 = int(input("Cuantas filas hay en tu primera matriz: "))
+        lol2 = int(input("Cuantas columnas hay en tu primera matriz: "))
+        
+        if pregunta2 == "no" or pregunta2 == "NO" or pregunta2 == "No":
+            if pregunta1 == suma:
+                if lol1 and lol2 == 2:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+ 
+
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+
+                    print(lista1)
+                    print(lista2)
+    
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 3:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+                    lol3 = int(input("Agrega el tercer numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+                    XD3 = int(input("Agrega el tercer numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+                    c = lol3 + XD3 
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+
+                elif lol1 and lol2 == 4:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+                    lol3 = int(input("Agrega el tercer numero: "))   
+                    lol4 = int(input("Agrega el cuarto numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+                    XD3 = int(input("Agrega el tercer numero: "))
+                    XD4 = int(input("Agrega el cuarto numero: "))
+ 
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+                    lista1.extend([lol4])
+ 
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+                    lista2.extend([XD4])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+                    c = lol3 + XD3 
+                    d = lol4 + XD4
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+                    lista3.extend([d])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                tt = True        
+                while tt:
+                    queri = input("Quieres volver a intentarlo?")
+                    if queri == "si" or queri == "Si" or queri == "Si":
+                        continuar = True
+                        tt = False 
+                    elif queri == "no" or queri == "No" or queri == "NO":
+                        tt = False
+                        continuar = False
+                        print("pues nos vemos, BAAAAAY :)")
+                    else:
+                        print("Caracteres invalidos bro, solo se aceptan si o no")
+                        kk = input("Vuelve a intentarlo")
+
+            if pregunta1 == resta:
+                if lol1 and lol2 == 2:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+ 
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+
+                    print(lista1)
+                    print(lista2)
+    
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 3:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+                    lol3 = int(input("Agrega el tercer numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+                    XD3 = int(input("Agrega el tercer numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+                    c = lol3 - XD3 
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 4:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = int(input("Agrega el primer numero: "))
+                    lol2 = int(input("Agrega el segundo numero: "))
+                    lol3 = int(input("Agrega el tercer numero: "))   
+                    lol4 = int(input("Agrega el cuarto numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = int(input("Agrega el primer numero: "))
+                    XD2 = int(input("Agrega el segundo numero: "))
+                    XD3 = int(input("Agrega el tercer numero: "))
+                    XD4 = int(input("Agrega el cuarto numero: "))
+ 
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+                    lista1.extend([lol4])
+ 
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+                    lista2.extend([XD4])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+                    c = lol3 - XD3 
+                    d = lol4 - XD4
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+                    lista3.extend([d])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                tt = True        
+                while tt:
+                    queri = input("Quieres volver a intentarlo?")
+                    if queri == "si" or queri == "Si" or queri == "Si":
+                        continuar = True
+                        tt = False 
+                    elif queri == "no" or queri == "No" or queri == "NO":
+                        tt = False
+                        continuar = False
+                        print("pues nos vemos, BAAAAAY :)")
+                    else:
+                        print("Caracteres invalidos bro, solo se aceptan si o no")
+                        kk = input("Vuelve a intentarlo") 
+
+
+        elif pregunta2 == "si" or pregunta2 == "SI" or pregunta2 == "Si":
+            if pregunta1 == suma:
+                if lol1 and lol2 == 2:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+
+                    print(lista1)
+                    print(lista2)
+    
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 3:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+                    lol3 = float(input("Agrega el tercer numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+                    XD3 = float(input("Agrega el tercer numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+                    c = lol3 + XD3 
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+
+                elif lol1 and lol2 == 4:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+                    lol3 = float(input("Agrega el tercer numero: "))   
+                    lol4 = float(input("Agrega el cuarto numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+                    XD3 = float(input("Agrega el tercer numero: "))
+                    XD4 = float(input("Agrega el cuarto numero: "))
+ 
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+                    lista1.extend([lol4])
+ 
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+                    lista2.extend([XD4])
+
+                    a = lol1 + XD1
+                    b = lol2 + XD2
+                    c = lol3 + XD3 
+                    d = lol4 + XD4
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+                    lista3.extend([d])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                tt = True        
+                while tt:
+                    queri = input("Quieres volver a intentarlo?")
+                    if queri == "si" or queri == "Si" or queri == "Si":
+                        continuar = True
+                        tt = False 
+                    elif queri == "no" or queri == "No" or queri == "NO":
+                        tt = False
+                        continuar = False
+                        print("pues nos vemos, BAAAAAY :)")
+                    else:
+                        print("Caracteres invalidos bro, solo se aceptan si o no")
+                        kk = input("Vuelve a intentarlo")
+
+            if pregunta1 == resta:
+                if lol1 and lol2 == 2:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+
+                    print(lista1)
+                    print(lista2)
+    
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 3:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float()(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+                    lol3 = float(input("Agrega el tercer numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+                    XD3 = float(input("Agrega el tercer numero: "))
+
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+                    c = lol3 - XD3 
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                elif lol1 and lol2 == 4:
+                    print("Agrega los primeros numero de tu primer Matriz")
+                    lol1 = float(input("Agrega el primer numero: "))
+                    lol2 = float(input("Agrega el segundo numero: "))
+                    lol3 = float(input("Agrega el tercer numero: "))   
+                    lol4 = float(input("Agrega el cuarto numero: "))
+
+                    print("Agrega los numero de tu segunda Matriz")
+                    XD1 = float(input("Agrega el primer numero: "))
+                    XD2 = float(input("Agrega el segundo numero: "))
+                    XD3 = float(input("Agrega el tercer numero: "))
+                    XD4 = float(input("Agrega el cuarto numero: "))
+ 
+                    lista1.extend([lol1])
+                    lista1.extend([lol2])
+                    lista1.extend([lol3])
+                    lista1.extend([lol4])
+ 
+                    lista2.extend([XD1])
+                    lista2.extend([XD2])
+                    lista2.extend([XD3])
+                    lista2.extend([XD4])
+
+                    a = lol1 - XD1
+                    b = lol2 - XD2
+                    c = lol3 - XD3 
+                    d = lol4 - XD4
+
+                    lista3.extend([a])
+                    lista3.extend([b])
+                    lista3.extend([c])
+                    lista3.extend([d])
+
+                    print(lista1)
+                    print(lista2)
+
+                    print("")
+
+                    print(lista3)
+
+                tt = True        
+                while tt:
+                    queri = input("Quieres volver a intentarlo?")
+                    if queri == "si" or queri == "Si" or queri == "Si":
+                        continuar = True
+                        tt = False 
+                    elif queri == "no" or queri == "No" or queri == "NO":
+                        tt = False
+                        continuar = False
+                        print("pues nos vemos, BAAAAAY :)")
+                    else:
+                        print("Caracteres invalidos bro, solo se aceptan si o no")
+                        kk = input("Vuelve a intentarlo")
+            
+                    
+matematicas()
